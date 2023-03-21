@@ -1,3 +1,3 @@
-module github.com/waldirborbajr/bpmusic
+module github.com/waldirborbajr/tmux-music
 
 go 1.20
