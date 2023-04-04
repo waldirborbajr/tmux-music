@@ -26,9 +26,7 @@ func main() {
 		content = "tmux-music " + strings.Join(param, "")
 	}
 
-	fmt.Printf(content)
-
-	// if _, err := fmt.Fprintf( "%s", content); err != nil {
-	// must(err)
-	// }
+	if _, err := fmt.Fprint(os.Stdout, content); err != nil {
+		must(err)
+	}
 }
